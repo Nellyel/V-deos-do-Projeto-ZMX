@@ -1,0 +1,112 @@
+/* Estilos básicos para resetar margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background: blue;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.header-container h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 20px;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+.logo:hover {
+    filter: brightness(80%);
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-container h1 {
+        margin: 10px 0;
+    }
+
+    .logo {
+        height: 40px;
+    }
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photos img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+.photos img:hover {
+    filter: brightness(80%);
+}
+
+.content {
+    background: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
