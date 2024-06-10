@@ -32,7 +32,7 @@ header {
     flex-grow: 1;
     text-align: center;
     margin: 0 20px;
-    font-size: 1.5em;
+    font-size: 1.5em; /* Tamanho padrão da fonte */
     white-space: nowrap;
 }
 
@@ -54,6 +54,7 @@ header {
 
     .header-container h1 {
         margin: 10px 0;
+        font-size: 1.2em; /* Reduzir o tamanho da fonte em dispositivos menores */
     }
 
     .logo {
@@ -109,4 +110,10 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: static;
+    }
 }

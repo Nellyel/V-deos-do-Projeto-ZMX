@@ -1,4 +1,3 @@
-// Seleciona as imagens e define as URLs para redirecionamento
 const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
@@ -21,7 +20,6 @@ img3.addEventListener('click', () => {
     window.location.href = urls.img3;
 });
 
-// Seleciona as imagens do header e define as URLs para redirecionamento
 const logo1 = document.getElementById('logo1');
 const logo2 = document.getElementById('logo2');
 
