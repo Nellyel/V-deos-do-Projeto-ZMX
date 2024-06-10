@@ -7,13 +7,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: black;
+    background-color: rgb(13, 2, 77);
     color: white;
 }
 
 header {
-    background: blue;
-    color: white;
+    background: rgba(243, 149, 7, 0.89);
+    color: black;
     padding: 20px 0;
     text-align: center;
 }
@@ -102,8 +102,8 @@ main {
 }
 
 footer {
-    background: blue;
-    color: white;
+    background: orange;
+    color: black;
     text-align: center;
     padding: 10px 0;
     position: fixed;
